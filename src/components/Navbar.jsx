@@ -3,8 +3,8 @@ import gsap from "gsap";
 import { useWindowScroll } from "react-use";
 import { useEffect, useRef, useState } from "react";
 import { TiLocationArrow } from "react-icons/ti";
-import { Separator } from "@/components/ui/Separator";
 import { _vertical } from "gsap/Observer";
+import { Separator } from "./ui/Separator";
 
 
 // import Button from "./Button";
