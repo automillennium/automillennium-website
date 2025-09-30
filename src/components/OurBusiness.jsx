@@ -148,8 +148,8 @@ const OurBusiness = () => {
         <div
           key={index}
           ref={(el) => (cardsRef.current[index] = el)}
-          className="absolute w-[75vw] h-[55vh] flex flex-col md:flex-row justify-center items-center
-                     bg-white text-black shadow-2xl rounded-2xl overflow-hidden opacity-0"
+          className="absolute w-[75vw] h-[65vh] flex flex-col md:flex-row justify-center items-center
+                     !bg-white text-black shadow-2xl rounded-2xl overflow-hidden opacity-0"
         >
           {/* Text Section */}
           <div className="md:w-1/2 p-8 md:pr-12 text-center md:text-left">
