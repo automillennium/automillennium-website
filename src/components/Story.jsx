@@ -53,7 +53,7 @@ const FloatingImage = () => {
 Automillennium group
         </p> */}
 
-        <div className="relative size-full px-[84px] ">
+        <div className="relative size-full px-4 md:px-[84px] ">
           <AnimatedTitle
             title="the story of <br /> a hidden real<b>m</b>"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
@@ -118,9 +118,9 @@ Automillennium group
           </div> */}
         </div>
 
-        <div className="-mt-80 flex w-full justify-center md:-mt-1  md:justify-center">
+        <div className="mt-6 flex w-full justify-center md:-mt-1  md:justify-center">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
-            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-center">
+            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-center ">
 AutoMillennium Group, where automotive dreams come to life. With three specialized divisions, we offer a comprehensive range of services and products to meet every requirement.
             </p>
 <div className="w-full flex justify-center items-center">

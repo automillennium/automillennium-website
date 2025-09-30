@@ -44,20 +44,20 @@ const Footer = () => {
 
   return (
     <footer className="w-screen bg-black text-white" ref={containerRef}>
-      <div className="w-full bg-black py-16 px-8 border-t border-gray-200">
+      <div className="w-full bg-black py-16 px-4 border-t border-gray-200">
         <h2 className="prompto text-2xl md:text-3xl text-center font-bold italic mb-10 animated-block opacity-0 translate-y-8">
           5 GLOBAL FACTORY LOCATIONS
         </h2>
 
-        <div className="flex flex-col-reverse md:flex-row justify-center gap-10 h-[250px] px-20">
-          <div className="flex flex-1 flex-col justify-center items-start gap-3 ">
-            <h3 className="prompto text-5xl md:text-6xl italic font-bold outline-text mb-2 animated-block opacity-0 translate-y-8">
+        <div className="flex flex-col-reverse md:flex-row justify-center gap-10 h-[250px] px-10 md:px-20">
+          <div className="flex flex-1  md:flex-col justify-center items-start gap-3 ">
+            <h3 className="prompto text-2xl md:text-6xl italic font-bold outline-text mb-2 animated-block opacity-0 translate-y-8">
               UAE
             </h3>
-            <h3 className="prompto text-5xl md:text-6xl italic font-bold outline-text mb-2 animated-block opacity-0 translate-y-8">
+            <h3 className="prompto text-2xl md:text-6xl italic font-bold outline-text mb-2 animated-block opacity-0 translate-y-8">
               INDIA
             </h3>
-            <h3 className="prompto text-5xl md:text-6xl italic font-bold outline-text mb-2 animated-block opacity-0 translate-y-8">
+            <h3 className="prompto text-2xl md:text-6xl italic font-bold outline-text mb-2 animated-block opacity-0 translate-y-8">
               SAUDI
             </h3>
           </div>
@@ -66,7 +66,7 @@ const Footer = () => {
             <img
               src="/img/map-w.png"
               alt="Map image"
-              className="object-cover w-[800px] h-[300px]"
+              className="object-cover w-full md:w-[800px] h-[300px]"
             />
           </div>
 
@@ -85,25 +85,25 @@ const Footer = () => {
 </div>
   <div className="flex gap-4 mt-16 justify-center">
     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
-      <FaInstagram className="text-3xl hover:text-pink-500 transition" />
+      <FaInstagram className="text-1xl md:text-3xl hover:text-pink-500 transition" />
     </a>
     <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
-      <FaFacebook className="text-3xl hover:text-blue-600 transition" />
+      <FaFacebook className="text-1xl md:text-3xl hover:text-blue-600 transition" />
     </a>
     <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
-      <FaTiktok className="text-3xl hover:text-black transition" />
+      <FaTiktok className="text-1xl md:text-3xl hover:text-black transition" />
     </a>
     <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
-      <FaLinkedin className="text-3xl hover:text-blue-500 transition" />
+      <FaLinkedin className="text-1xl md:text-3xl hover:text-blue-500 transition" />
     </a>
     <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
-      <FaXTwitter className="text-3xl hover:text-black transition" />
+      <FaXTwitter className="text-1xl md:text-3xl hover:text-black transition" />
     </a>
     <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
-      <FaYoutube className="text-3xl hover:text-red-600 transition" />
+      <FaYoutube className="text-1xl md:text-3xl hover:text-red-600 transition" />
     </a>
     <a href="tel:+1234567890">
-      <FaPhone className="text-3xl hover:text-green-600 transition" />
+      <FaPhone className="text-1xl md:text-3xl hover:text-green-600 transition" />
     </a>
   </div>
       </div>

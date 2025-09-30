@@ -154,7 +154,7 @@ const OurBusiness = () => {
           {/* Text Section */}
           <div className="md:w-1/2 p-8 md:pr-12 text-center md:text-left">
             <p
-              className="text-gray-800 text-base md:text-lg leading-relaxed"
+              className="text-gray-800 text-[13px] md:text-lg leading-relaxed"
               dangerouslySetInnerHTML={{ __html: card.text }}
             />
           </div>
