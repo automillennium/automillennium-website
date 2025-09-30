@@ -3,6 +3,7 @@ import { useRef } from "react";
 
 import Button from "./Button";
 import AnimatedTitle from "./AnimatedTitle";
+import { BentoCard, BentoTilt } from "./Features";
 
 const FloatingImage = () => {
   const frameRef = useRef(null);
@@ -48,17 +49,27 @@ const FloatingImage = () => {
   return (
     <div id="story" className="min-h-dvh w-screen bg-black text-blue-50">
       <div className="flex size-full flex-col items-center py-10 pb-24">
-        <p className="font-general text-sm uppercase md:text-[10px]">
+        {/* <p className="font-general text-sm uppercase md:text-[10px]">
 Automillennium group
-        </p>
+        </p> */}
 
-        <div className="relative size-full">
+        <div className="relative size-full px-[84px] ">
           <AnimatedTitle
-            title="the st<b>o</b>ry of <br /> a hidden real<b>m</b>"
+            title="the story of <br /> a hidden real<b>m</b>"
             containerClass="mt-5 pointer-events-none mix-blend-difference relative z-10"
           />
 
-          <div className="story-img-container">
+              <BentoTilt className="border-hsla relative mb-7 h-96 w-full overflow-hidden rounded-md md:h-[65vh] mt-10">
+                <BentoCard
+                  src="/videos/car-hero-1.mp4"
+                  title={
+         ""
+                  }
+                  description=""
+                />
+              </BentoTilt>
+
+          {/* <div className="story-img-container">
             <div className="story-img-mask">
               <div className="story-img-content">
      <video
@@ -79,7 +90,6 @@ Automillennium group
               </div>
             </div>
 
-            {/* for the rounded corner */}
             <svg
               className="invisible absolute size-0"
               xmlns="http://www.w3.org/2000/svg"
@@ -105,20 +115,23 @@ Automillennium group
                 </filter>
               </defs>
             </svg>
-          </div>
+          </div> */}
         </div>
 
-        <div className="-mt-80 flex w-full justify-center md:-mt-64 md:me-44 md:justify-end">
+        <div className="-mt-80 flex w-full justify-center md:-mt-1  md:justify-center">
           <div className="flex h-full w-fit flex-col items-center md:items-start">
-            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-start">
+            <p className="mt-3 max-w-sm text-center font-circular-web text-violet-50 md:text-center">
 AutoMillennium Group, where automotive dreams come to life. With three specialized divisions, we offer a comprehensive range of services and products to meet every requirement.
             </p>
+<div className="w-full flex justify-center items-center">
 
             <Button
               id="realm-btn"
               title="discover more"
               containerClass="mt-5"
-            />
+              
+              />
+              </div>
           </div>
         </div>
       </div>

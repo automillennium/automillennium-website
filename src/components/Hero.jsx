@@ -491,7 +491,7 @@ const Hero = () => {
         />
 
         <div className="absolute left-0 top-0 z-40 size-full">
-          <div className="mt-24 px-5 sm:px-10">
+          {/* <div className="mt-24 px-5 sm:px-10">
             <p className="mb-5 max-w-96 font-robert-regular text-blue-100 !text-[30px]">
               Built for You
               <br /> Designed for the Drive
@@ -503,7 +503,7 @@ const Hero = () => {
               leftIcon={<TiLocationArrow />}
               containerClass="bg-yellow-300 flex-center gap-1"
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

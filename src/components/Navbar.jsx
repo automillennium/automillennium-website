@@ -11,7 +11,7 @@ import { Separator } from "./ui/Separator";
 
 
  
-const navItems = ["Vtx", "Rox", "Autocare 360", "Rhinomotive",  ];
+const navItems = ["VTX", "ROX", "AutoCare 360", "RhinoMotive",  ];
 const navItemsTwo = ["Project", "Teams", "Events", ];
 
 const NavBar = () => {

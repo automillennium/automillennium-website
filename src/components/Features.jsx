@@ -38,7 +38,7 @@ export const BentoTilt = ({ children, className = "" }) => {
   );
 };
 
-export const BentoCard = ({ src, title, description, isComingSoon }) => {
+export const BentoCard = ({ src, title, description, isComingSoon ,imgLink}) => {
   const [cursorPosition, setCursorPosition] = useState({ x: 0, y: 0 });
   const [hoverOpacity, setHoverOpacity] = useState(0);
   const hoverButtonRef = useRef(null);
@@ -67,7 +67,8 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
       />
       <div className="relative z-10 flex size-full flex-col justify-between p-5 text-blue-50">
         <div>
-          <h1 className="bento-title special-font">{title}</h1>
+          {/* <h1 className="bento-title special-font">{title}</h1> */}
+          <img src={imgLink} alt="" className="object-contain h-[150px] " />
           {description && (
             <p className="mt-3 max-w-64 text-xs md:text-base">{description}</p>
           )}
@@ -90,7 +91,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
               }}
             />
             <TiLocationArrow className="relative z-20" />
-            <p className="relative z-20">coming soon</p>
+            <p className="relative z-20">View more</p>
           </div>
         )}
       </div>
@@ -99,7 +100,7 @@ export const BentoCard = ({ src, title, description, isComingSoon }) => {
 };
 
 const Features = () => (
-  <section className="bg-black pb-52">
+  <section className="bg-black pb-28">
   <div className="container mx-auto px-3 md:px-10">
     <div className="px-5 py-32">
       <p className="font-circular-web text-lg text-blue-50">
@@ -118,12 +119,14 @@ const Features = () => (
             <b>V</b>tx
           </>
         }
+
+        imgLink={"/img/vtx-white.png"}
         description="Automotive Upgrades & customization Factory"
         isComingSoon
       />
     </BentoTilt>
 
-    <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-3 gap-7">
+    <div className="grid h-[135vh] w-full grid-cols-2 grid-rows-2 gap-7">
       <BentoTilt className="bento-tilt_1 row-span-1 md:col-span-1 md:row-span-2">
         <BentoCard
           src="/videos/car-hero-2.mp4"
@@ -132,6 +135,9 @@ const Features = () => (
               <b>Rhino</b>motive
             </>
           }
+
+                  imgLink={"/img/rhino-white.png"}
+
           // description="RHINOMOTIVE is the only global brand with 1000+ automotive products and an integrated system that drives efficiency and profit."
           isComingSoon
         />
@@ -145,6 +151,9 @@ const Features = () => (
               <b>Auto</b>care 360
             </>
           }
+
+                  imgLink={"/img/autocare-white.png"}
+
           // description="AUTOCARE360 covers over 30 value added services for full car care & protection"
           isComingSoon
         />
@@ -155,15 +164,18 @@ const Features = () => (
           src="/videos/car-hero-4.mp4"
           title={
             <>
-              <b>auto</b>clinic
+              <b>rox</b>
             </>
           }
+
+                  imgLink={"/img/rox-white.png"}
+
           // description="Visit our Car Care Clinic for premium services including tinting, detailing, paint protection, ceramic coating, rust-proofing, wrapping, and more."
           isComingSoon
         />
       </BentoTilt>
 
-      <BentoTilt className="bento-tilt_2">
+      {/* <BentoTilt className="bento-tilt_2">
         <div className="flex size-full flex-col justify-between bg-violet-300 p-5">
           <h1 className="bento-title special-font max-w-64 text-black">
             M<b>o</b>re co<b>m</b>ing s<b>o</b>on.
@@ -171,8 +183,8 @@ const Features = () => (
 
           <TiLocationArrow className="m-5 scale-[5] self-end" />
         </div>
-      </BentoTilt>
-
+      </BentoTilt> */}
+{/* 
       <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
         <BentoCard
           src="/videos/car-hero-2.mp4"
@@ -186,7 +198,7 @@ const Features = () => (
 // for added value and comfort"
           isComingSoon
         />
-      </BentoTilt>
+      </BentoTilt> */}
     </div>
   </div>
 </section>

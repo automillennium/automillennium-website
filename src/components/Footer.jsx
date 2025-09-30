@@ -66,20 +66,24 @@ const Footer = () => {
             <img
               src="/img/map-w.png"
               alt="Map image"
-              className="object-contain w-[800px] h-[300px]"
+              className="object-cover w-[800px] h-[300px]"
             />
           </div>
 
+
+        </div>
+        
 <div className="flex flex-col justify-start">
-  <h2 className="!lacto text-2xl md:text-3xl text-left mb-10 animated-block opacity-0 translate-y-8 uppercase">
+  {/* <h2 className="!lacto text-2xl md:text-3xl text-left mb-10 animated-block opacity-0 translate-y-8 uppercase">
     Partnership
   </h2>
   <p className="text-2xl md:text-[14px] text-left mb-10 animated-block opacity-0 translate-y-8 !lacto uppercase">
     Become a Dealer
-  </p>
+  </p> */}
 
   {/* Social Icons Section */}
-  <div className="flex gap-4 mt-4">
+</div>
+  <div className="flex gap-4 mt-16 justify-center">
     <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
       <FaInstagram className="text-3xl hover:text-pink-500 transition" />
     </a>
@@ -102,9 +106,6 @@ const Footer = () => {
       <FaPhone className="text-3xl hover:text-green-600 transition" />
     </a>
   </div>
-</div>
-
-        </div>
       </div>
 
   

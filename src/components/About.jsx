@@ -30,12 +30,12 @@ const About = () => {
     
     <div id="about" className="min-h-screen w-screen">
 <div className="relative mb-8 mt-36 flex flex-col items-center gap-5">
-  <p className="font-general text-sm uppercase md:text-[10px]">
+  {/* <p className="font-general text-sm uppercase md:text-[10px]">
     Welcome to Automillennium Group
-  </p>
+  </p> */}
 
   <AnimatedTitle
-    title="Disc<b>o</b>ver the world’s <br /> largest shared <b>r</b>ide"
+    title="Discover the world’s <br /> largest shared <b>r</b>ide"
     containerClass="mt-5 !text-black text-center"
   />
 
