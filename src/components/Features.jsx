@@ -115,10 +115,10 @@ const Features = () => (
         src="/videos/car-hero-1.mp4"
         title={
           <>
-            radia<b>n</b>t
+            <b>V</b>tx
           </>
         }
-        description="Transform your car with premium wraps, custom paint, and advanced performance mods."
+        description="Automotive Upgrades & customization Factory"
         isComingSoon
       />
     </BentoTilt>
@@ -129,10 +129,10 @@ const Features = () => (
           src="/videos/car-hero-2.mp4"
           title={
             <>
-              zig<b>m</b>a
+              <b>Rhino</b>motive
             </>
           }
-          description="Personalize your vehicle with custom interiors, rims, and lighting for that perfect look."
+          // description="RHINOMOTIVE is the only global brand with 1000+ automotive products and an integrated system that drives efficiency and profit."
           isComingSoon
         />
       </BentoTilt>
@@ -142,10 +142,10 @@ const Features = () => (
           src="/videos/car-hero-3.mp4"
           title={
             <>
-              n<b>e</b>xus
+              <b>Auto</b>care 360
             </>
           }
-          description="Upgrade your car’s performance with engine tuning, suspension mods, and exhaust systems."
+          // description="AUTOCARE360 covers over 30 value added services for full car care & protection"
           isComingSoon
         />
       </BentoTilt>
@@ -155,10 +155,10 @@ const Features = () => (
           src="/videos/car-hero-4.mp4"
           title={
             <>
-              az<b>u</b>l
+              <b>auto</b>clinic
             </>
           }
-          description="Show off your custom car at events, exhibitions, and social media with style."
+          // description="Visit our Car Care Clinic for premium services including tinting, detailing, paint protection, ceramic coating, rust-proofing, wrapping, and more."
           isComingSoon
         />
       </BentoTilt>
@@ -173,13 +173,18 @@ const Features = () => (
         </div>
       </BentoTilt>
 
-      <BentoTilt className="bento-tilt_2">
-        <video
+      <BentoTilt className="bento-tilt_1 me-14 md:col-span-1 md:me-0">
+        <BentoCard
           src="/videos/car-hero-2.mp4"
-          loop
-          muted
-          autoPlay
-          className="size-full object-cover object-center"
+          title={
+            <>
+              <b>Retro</b>fit
+            </>
+          }
+//           description="Fix accessories not fixed by the manufacturer such as wireless chargers,
+// parking sensors, rear entertainment systems, etc.
+// for added value and comfort"
+          isComingSoon
         />
       </BentoTilt>
     </div>

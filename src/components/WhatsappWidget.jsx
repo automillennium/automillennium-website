@@ -7,7 +7,7 @@ function WhatsappWidget() {
        <WhatsAppWidget
         phoneNumber="+919645023614" // your WhatsApp number with country code
         message="Hello! How can I help you?"
-        companyName="My Company"
+        companyName="Automillennium Group"
         avatar="https://example.com/avatar.png" // optional
       />
     </div>

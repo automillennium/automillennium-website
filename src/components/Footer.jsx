@@ -3,19 +3,17 @@
 import { useRef, useEffect } from "react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
-import { FaDiscord, FaTwitter, FaYoutube, FaMedium } from "react-icons/fa";
+import { FaInstagram, FaFacebook, FaTiktok, FaLinkedin, FaYoutube, FaPhone } from "react-icons/fa";
+import { FaXTwitter } from "react-icons/fa6"; // For X (Twitter new logo)
 
 gsap.registerPlugin(ScrollTrigger);
 
-const socialLinks = [
-  { href: "https://discord.com", icon: <FaDiscord /> },
-  { href: "https://twitter.com", icon: <FaTwitter /> },
-  { href: "https://youtube.com", icon: <FaYoutube /> },
-  { href: "https://medium.com", icon: <FaMedium /> },
-];
+
 
 const Footer = () => {
   const containerRef = useRef(null);
+
+  
 
   useEffect(() => {
     const ctx = gsap.context(() => {
@@ -51,8 +49,8 @@ const Footer = () => {
           5 GLOBAL FACTORY LOCATIONS
         </h2>
 
-        <div className="flex flex-col-reverse md:flex-row justify-center gap-10 h-[250px]">
-          <div className="flex flex-1 flex-col justify-center items-start gap-3 pl-0 md:pl-40">
+        <div className="flex flex-col-reverse md:flex-row justify-center gap-10 h-[250px] px-20">
+          <div className="flex flex-1 flex-col justify-center items-start gap-3 ">
             <h3 className="prompto text-5xl md:text-6xl italic font-bold outline-text mb-2 animated-block opacity-0 translate-y-8">
               UAE
             </h3>
@@ -71,36 +69,45 @@ const Footer = () => {
               className="object-contain w-[800px] h-[300px]"
             />
           </div>
+
+<div className="flex flex-col justify-start">
+  <h2 className="!lacto text-2xl md:text-3xl text-left mb-10 animated-block opacity-0 translate-y-8 uppercase">
+    Partnership
+  </h2>
+  <p className="text-2xl md:text-[14px] text-left mb-10 animated-block opacity-0 translate-y-8 !lacto uppercase">
+    Become a Dealer
+  </p>
+
+  {/* Social Icons Section */}
+  <div className="flex gap-4 mt-4">
+    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+      <FaInstagram className="text-3xl hover:text-pink-500 transition" />
+    </a>
+    <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+      <FaFacebook className="text-3xl hover:text-blue-600 transition" />
+    </a>
+    <a href="https://tiktok.com" target="_blank" rel="noopener noreferrer">
+      <FaTiktok className="text-3xl hover:text-black transition" />
+    </a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+      <FaLinkedin className="text-3xl hover:text-blue-500 transition" />
+    </a>
+    <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+      <FaXTwitter className="text-3xl hover:text-black transition" />
+    </a>
+    <a href="https://youtube.com" target="_blank" rel="noopener noreferrer">
+      <FaYoutube className="text-3xl hover:text-red-600 transition" />
+    </a>
+    <a href="tel:+1234567890">
+      <FaPhone className="text-3xl hover:text-green-600 transition" />
+    </a>
+  </div>
+</div>
+
         </div>
       </div>
 
-      {/* <div className="container mx-auto flex flex-col items-center justify-between gap-4 px-4 md:flex-row">
-        <p className="text-center text-sm font-light md:text-left">
-          ©Automillennium group. All rights reserved
-        </p>
-
-        <div className="flex justify-center gap-4 md:justify-start">
-          {socialLinks.map((link, index) => (
-            <a
-              key={index}
-              href={link.href}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-black transition-colors duration-500 ease-in-out hover:text-white"
-            >
-              {link.icon}
-            </a>
-          ))}
-        </div>
-
-        <a
-          href="#privacy-policy"
-          className="text-center text-sm font-light hover:underline md:text-right"
-        >
-          Privacy Policy
-        </a>
-      </div> */}
-
+  
 
     </footer>
   );
