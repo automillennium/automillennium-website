@@ -54,7 +54,7 @@ const OurBusiness = () => {
   }, []);
 
   return (
-    <div ref={containerRef} className="relative h-screen w-full bg-black">
+    <div ref={containerRef} className="relative h-[120vh] w-full bg-black">
       {businessData.map((card, index) => (
         <div
           key={index}
