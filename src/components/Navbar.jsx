@@ -11,8 +11,8 @@ import { Separator } from "./ui/Separator";
 
 
  
-const navItems = ["VTX", "ROX", "AutoCare 360", "RhinoMotive",  ];
-const navItemsTwo = ["Project", "Teams", "Events", ];
+const navItems = ["VTX", "ROX", "AutoCare 360", "RhinoMotive", "Global Business"  ];
+const navItemsTwo = ["Project", "Events", "Our Teams" ];
 
 const NavBar = () => {
   // State for toggling audio and visual indicator
@@ -41,6 +41,7 @@ const NavBar = () => {
   //     audioElementRef.current.pause();
   //   }
   // }, [isAudioPlaying]);
+
 
   useEffect(() => {
     if (currentScrollY === 0) {

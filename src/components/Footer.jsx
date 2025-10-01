@@ -46,7 +46,7 @@ const Footer = () => {
     <footer className="w-screen bg-black text-white" ref={containerRef}>
       <div className="w-full bg-black py-16 px-4 border-t border-gray-200">
         <h2 className="prompto text-2xl md:text-3xl text-center font-bold italic mb-10 animated-block opacity-0 translate-y-8">
-          5 GLOBAL FACTORY LOCATIONS
+          3 GLOBAL FACTORY LOCATIONS
         </h2>
 
         <div className="flex flex-col-reverse md:flex-row justify-center gap-10 h-[250px] px-10 md:px-20">

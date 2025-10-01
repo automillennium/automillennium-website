@@ -481,7 +481,8 @@ const Hero = () => {
         className="relative z-10 h-dvh w-screen overflow-hidden rounded-lg bg-blue-75"
       >
         <video
-          src="/videos/car-hero-1.mp4"
+          // src="/videos/car-hero-1.mp4"
+          src="https://automillennium.com/wp-content/uploads/2025/07/amg-video-1920x1080-1.mp4"
           autoPlay
           loop
           muted
